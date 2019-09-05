@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity">
+
+    <data>
+        <variable name="space" type="buu.informatics.s59160620.carparking.Space"/>
+        <variable name="space2" type="buu.informatics.s59160620.carparking.Space2"/>
+        <variable name="space3" type="buu.informatics.s59160620.carparking.Space3"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <fragment
+                android:id="@+id/myNavHostFragment"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:navGraph="@navigation/navigation_car"
+                app:defaultNavHost="true" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

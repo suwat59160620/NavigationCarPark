@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CarParking</string>
+    <string name="Parking_Lot">Parking Lot</string>
+    <string name="space_one">SPACE ONE</string>
+    <string name="space_two">SPACE TWO</string>
+    <string name="space_three">SPACE THREE</string>
+    <string name="name">NAME</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="your_name">Your Name</string>
+    <string name="license_plate">License Plate</string>
+    <string name="brand">Barnd</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_Login">LOGIN</string>
+    <string name="text_username">Username</string>
+    <string name="username_hint">Username</string>
+    <string name="bnt_login">LOGIN</string>
+    <string name="bnt_cancle">CANCLE</string>
+</resources>
