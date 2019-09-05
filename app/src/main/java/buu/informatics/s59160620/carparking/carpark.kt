@@ -3,10 +3,8 @@ package buu.informatics.s59160620.carparking
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import buu.informatics.s59160620.carparking.databinding.FragmentCarparkBinding
 import androidx.navigation.findNavController
@@ -21,6 +19,8 @@ import kotlinx.android.synthetic.main.fragment_carpark.*
 class carpark : Fragment() {
     private val parking: ArrayList<Space> = ArrayList<Space>()
     private lateinit var binding: FragmentCarparkBinding
+
+
 
     var btn123:Int = 0
 
@@ -66,7 +66,19 @@ class carpark : Fragment() {
             }
 
         }
+        setHasOptionsMenu(true)
         return binding.root
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater?.inflate(R.menu.options_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return NavigationUI.onNavDestinationSelected(item!!,
+            view!!.findNavController())
+                || super.onOptionsItemSelected(item)
     }
     private fun Init() {
         binding.apply {

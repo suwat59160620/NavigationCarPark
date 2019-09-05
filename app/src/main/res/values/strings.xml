@@ -19,4 +19,7 @@
     <string name="username_hint">Username</string>
     <string name="bnt_login">LOGIN</string>
     <string name="bnt_cancle">CANCLE</string>
+    <string name="menu_Profile">Profile</string>
+    <string name="text_pro01">Profile</string>
+    <string name="text_name01">Suwat Hankai</string>
 </resources>
